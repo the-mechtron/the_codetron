@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Monaco';
+  src: url('./assests/fonts/Monaco.ttf')
+}
+
+@font-face {
+  font-family: 'VeraMono';
+  src: url('./assests/fonts/VeraMono.ttf')
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'VeraMono';
+}
+
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  align-content: end;
+}
+
+
+.main{
+  height: 95%;
+  width: 100vw; 
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'VeraMono';
+}
+
+.code-editor{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.buttons{
+  box-shadow: 0px 0.2rem 3px rgb(149, 148, 148);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.run-code{
+  margin: 0.5rem;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 15px;
+  background-color: rgb(7, 172, 13);
+  color: white;
+  border: solid 0px white;
+  font-family: 'VeraMono';
+}
+
+.login-modal {
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  align-self: center;
+  justify-self: center;
+  background-color: #e7f1f1;
+}
+
+.login-modal h2{
+  text-align: center;
+}
+
+.close-modal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.login-modal[open] {
+  animation: slide-in-from-top 0.35s ease-out;
+}
+
+.run-code:hover{
+  margin: 0.5rem;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 15px;
+  background-color: rgb(7, 144, 11);
+  color: white;
+  cursor: pointer;
+  border: solid 0px white;
+  font-family: 'VeraMono';
+}
+
+h3{
+  text-align: center;
+}
+
+.dropdown{
+  margin: 0.5rem;
+  height: 2rem;
+  width: 7rem;
+  border-radius: 15px;
+  text-align: center;
+  background-color: white(37, 34, 34);
+  border: solid 0.5px black;
+  font-family: 'VeraMono';
+}
+
+.dropdown:focus-within,
+.dropdown:hover{
+  margin: 0.5rem;
+  height: 2rem;
+  width: 7rem;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(95, 93, 93);
+  border: solid 0.5px black;
+  font-family: 'VeraMono';
+  color: white;
+}
+
+.dropdown option:checked{
+  background-color: rgb(172, 170, 170);
+  color: white;
+}
+
+.dropdown option{
+  background-color: white;
+  color: black;
+  cursor: grab;
+}
+
+.output{
+  width: 40%;
+  /* height: 100%; */
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.output-header{
+  height: 9%;
+  border-left: solid rgb(0, 0, 0) 1px;
+  border-top: none;
+  display: flex;
+  padding-left: 1rem;
+  align-items: center;
+  background-color: rgb(236, 238, 234);
+  box-shadow: 0px 0.2rem 3px rgb(149, 148, 148);
+}
+
+.output-area:read-only{
+  white-space: pre-wrap;
+  height: 93%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: scroll;
+  border: solid rgb(0, 0, 0) 1px;
+  border-top: none;
+}
+
+.output-area p:read-only{
+  margin: 1rem;
+}
+

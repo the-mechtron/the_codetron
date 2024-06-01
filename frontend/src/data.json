@@ -1,0 +1,32 @@
+[
+    {
+        "id": "l1",
+        "language": "python",
+        "version": "",
+        "welcomeCode": "\n //Welcome to the_codetron"
+    },
+    {
+        "id": "l2",
+        "language": "javascript",
+        "version": "",
+        "welcomeCode": "\n //Welcome to the_codetron\nfor (var input = 1; input <= 10; input++) {\n console.log(input);\n}"
+    },
+    {
+        "id": "l3",
+        "language": "cpp",
+        "version": "",
+        "welcomeCode": "\n //Welcome to the_codetron"
+    },
+    {
+        "id": "l4",
+        "language": "java",
+        "version": "",
+        "welcomeCode": "\n //Welcome to the_codetron"
+    },
+    {
+        "id": "l5",
+        "language": "typescript",
+        "version": "",
+        "welcomeCode": "\n //Welcome to the_codetron"
+    }
+]
